@@ -1,0 +1,173 @@
+ 
+@import "style/base.less"; 
+
+:root{ 
+    --navigationSize: 64px; 
+} 
+
+
+/** 
+* main gallery styling 
+*/ 
+.gallery{ 
+
+    background-color: #ffffff; 
+    display: inline-block;
+    position: fixed;
+    width: 800px; 
+    height: 600px;
+   
+    padding: 10px; 
+    overflow: hidden; 
+    align: center; 
+    text-align: center; 
+   
+} 
+
+#active{ 
+    position: relative; 
+    background-color: #ffffff; 
+    width: 666px; 
+    height: 400px; 
+    margin-left: 3px; 
+    z-index: 8; 
+    display: inline-block; 
+    float: left; 
+} 
+#active img{ 
+    width: 600px; 
+    height: 350px; 
+    display: block; 
+    position: absolute; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: -360px; 
+    left: 0; 
+    right: 0; 
+} 
+
+.hide{ 
+    opacity: 0; 
+} 
+
+#show{ 
+    opacity: 1; 
+} 
+
+.thumbnail{ 
+    width: 666px ; 
+    background-color: #ffffff; 
+    margin: 2px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    clear: both; 
+    align: center; 
+    display: inline-block; 
+} 
+.thumbnail img{ 
+    border: 2px solid #FFFFFF; 
+    margin-left: 2px; 
+    margin-right: 2px; 
+    max-height: 64px; 
+} 
+.thumbnail #activeThumbnail { 
+    border: 2px solid #000000; 
+} 
+
+.navigation{ 
+    width: var(--navigationSize); 
+    height: 400px; 
+    background-color: #ffffff; 
+    display: inline-block; 
+} 
+.navigation img{ 
+    vertical-align: middle; 
+} 
+
+.navLeft{ 
+    float: left; 
+} 
+
+.navRight{ 
+    float: right; 
+} 
+
+/** 
+* helpers to style 
+*/ 
+.verticalMidAligner{ 
+    display: inline-block; 
+    height: 100%; 
+    vertical-align: middle; 
+} 
+
+
+/** 
+* main lightbox stying 
+*/ 
+#lightbox{ 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    background: black;
+    background-color: #000000; 
+    align: center; 
+} 
+
+#addImgDiv{ 
+    position: fixed; 
+    align: center;
+    bottom: 28%;
+    left: 45%;
+    z-index: 45;
+} 
+/** 
+* 
+*/ 
+#lightbox img{ 
+    float: left; 
+    top: 50%; 
+    left: 50%; 
+    margin-top: -64px; 
+    margin-left: -64px; 
+    width: 1000px;
+    height: 1000px;
+    background-color: #000000;
+} 
+
+#overlay{ 
+    position: relative; 
+    width: 500px; 
+    height: 500px; 
+    top: 50%; 
+    left: 50%; 
+    margin-left: -250px; 
+    text-align: center; 
+    display: block; 
+    z-index: 10; 
+    overflow: auto;
+
+} 
+#overlay img{ 
+  position: fixed;
+  width: 1000px; 
+  height: 800px; 
+  top: 10%;
+  left: 25%;
+} 
+
+#frontpage{
+    overflow: auto;
+     padding-bottom: 50px;
+}
+
+#footer{
+    bottom: 0%;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    z-index: 20;
+    backgroud-color: #000000;
+}
+
+
